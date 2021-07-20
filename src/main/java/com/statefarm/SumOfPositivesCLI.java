@@ -7,8 +7,9 @@ public class SumOfPositivesCLI {
         int sumOfPositives = 0;
         for (int i = 0; i < args.length; i++) {
 
-            if (Integer.parseInt(args[i]) > 0) {
-                sumOfPositives += Integer.parseInt(args[i]);
+            int argAsNumber = Integer.parseInt(args[i]);
+            if (argAsNumber > 0) {
+                sumOfPositives += argAsNumber;
             }
         }
         System.out.println(sumOfPositives);
